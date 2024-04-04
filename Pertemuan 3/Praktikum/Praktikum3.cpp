@@ -27,21 +27,21 @@ public:
 };
 
 int main() {
-    Mahasiswa Mahasiswa;
+    Mahasiswa mhs;
 
     string nama, npm;
 
     cout << "Masukkan nama Mahasiswa: ";
     getline(cin, nama);
-    Mahasiswa.setNama(nama);
+    mhs.setNama(nama);
 
     cout << "Masukkan NPM Mahasiswa: ";
     getline(cin, npm);
-    Mahasiswa.setNPM(npm);
+    mhs.setNPM(npm);
 
     cout << "\nData Mahasiswa: \n";
-    cout << "Nama: " << Mahasiswa.getNama() << endl;
-    cout << "NPM: " << Mahasiswa.getNPM() << endl;
+    cout << "Nama: " << mhs.getNama() << endl;
+    cout << "NPM: " << mhs.getNPM() << endl;
 
     return 0;
 }
