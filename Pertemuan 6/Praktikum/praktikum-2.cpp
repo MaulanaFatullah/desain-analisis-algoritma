@@ -13,6 +13,7 @@ public:
         tinggi = b;
     }
 };
+
 // Class turunan
 class PersegiPanjang : public BangunDatar {
     public:
