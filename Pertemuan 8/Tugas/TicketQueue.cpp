@@ -61,7 +61,7 @@ public:
             return;
         }
 
-        queue<Tiket> tempQueue = antrianTiket; // Copy the original queue
+        queue<Tiket> tempQueue = antrianTiket;
         cout << "Daftar antrian:" << endl;
         while (!tempQueue.empty()) {
             Tiket tiket = tempQueue.front();
