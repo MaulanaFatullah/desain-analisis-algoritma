@@ -1,6 +1,5 @@
 #include <iostream>
 #include <queue>
-#include <vector>
 
 using namespace std;
 
@@ -18,10 +17,9 @@ public:
 class LoketTiket {
 private:
     queue<Tiket> antrianTiket;
-    int maxSize;
 
 public:
-    LoketTiket(int size) : maxSize(size) {}
+    int maxSize;
 
     void enqueue(Tiket tiket) {
         if (!isFull()) {
@@ -72,8 +70,9 @@ public:
 };
 
 int main() {
-    const int MAX_SIZE = 100;
-    LoketTiket loket(MAX_SIZE);
+    LoketTiket loket;
+    loket.maxSize = 100;
+
     int pilihan, nomorTiket = 0;
     string namaPelanggan;
 
