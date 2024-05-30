@@ -41,7 +41,7 @@ public:
         if (!isEmpty()) {
             return antrianTiket.front();
         } else {
-            throw runtime_error("Tidak ada pelanggan yang mengantri.");
+            cout << "Tidak ada pelanggan yang mengantri.";
         }
     }
 
