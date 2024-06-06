@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
+class Node {
 public:
     int data;
     Node *left;
@@ -16,8 +15,7 @@ public:
     }
 };
 
-class Tree
-{
+class Tree {
 public:
     Node *root;
 
@@ -54,8 +52,7 @@ public:
     }
 };
 
-int main()
-{
+int main() {
     Tree tree;
     Node *root = new Node(18);
     root->left = new Node(30);
@@ -63,17 +60,14 @@ int main()
     root->left->right = new Node(32);
     root->right = new Node(33);
 
-    // Pre-order traversal
     cout << "Pre-order traversal: ";
     tree.preOrder(root);
     cout << endl;
 
-    // In-order traversal
     cout << "In-order traversal: ";
     tree.inOrder(root);
     cout << endl;
 
-    // Post-order traversal
     cout << "Post-order traversal: ";
     tree.postOrder(root);
     cout << endl;
