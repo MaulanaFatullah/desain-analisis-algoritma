@@ -10,7 +10,7 @@ private:
     vector<vector<int> > matriksKetetanggaan; // Matriks ketetanggaan
 
 public:
-    Graph(int simpul): jumlahSimpul(simpul){
+    Graph(int simpul) : jumlahSimpul(simpul){
         // Inisialisasi matriks ketetanggaan dengan nol
         for (int i = 0; i < simpul; i++)
         {
