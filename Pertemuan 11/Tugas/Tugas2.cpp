@@ -2,7 +2,7 @@
 using namespace std;
 #include <limits.h>
 
-#define Node 9
+#define Node 6
 
 int minDistance(int dist[], bool sptSet[])
 {
@@ -20,9 +20,10 @@ int minDistance(int dist[], bool sptSet[])
 
 void printResult(int dist[])
 {
-    cout << "Vertex \t Distance from Source" << endl;
+    cout << "Jarak Terpendek ke setiap simpul: \n" << endl;
+        cout << "Simpul \t Simpul 1 ke Simpul 2-6" << endl;
     for (int i = 0; i < Node; i++)
-        cout << i << " \t\t\t\t" << dist[i] << endl;
+        cout << i+1 << " \t\t\t\t" << dist[i] << endl;
 }
 
 void dijkstra(int graph[Node][Node], int src)
@@ -58,15 +59,12 @@ void dijkstra(int graph[Node][Node], int src)
 int main()
 {
     int graph[Node][Node] = {
-        {0, 4, 0, 0, 0, 0, 0, 8, 0},
-        {4, 0, 8, 0, 0, 0, 0, 11, 0},
-        {0, 8, 0, 7, 0, 4, 0, 0, 2},
-        {0, 0, 7, 0, 9, 14, 0, 0, 0},
-        {0, 0, 0, 9, 0, 10, 0, 0, 0},
-        {0, 0, 4, 14, 10, 0, 2, 0, 0},
-        {0, 0, 0, 0, 0, 2, 0, 1, 6},
-        {8, 11, 0, 0, 0, 0, 1, 0, 7},
-        {0, 0, 2, 0, 0, 0, 6, 7, 0}};
+        {0,  7,  9,  0,  0, 14},
+        {7,  0,  10, 15, 0, 0},
+        {9,  10, 0,  11, 0, 2},
+        {0,  15, 11, 0,  6, 0},
+        {0,  0,  0,  6,  0, 9},
+        {14, 0,  2,  0, 9, 0}};
 
     dijkstra(graph, 0);
 
