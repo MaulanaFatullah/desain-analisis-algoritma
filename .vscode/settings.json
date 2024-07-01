@@ -11,7 +11,10 @@
         "new": "cpp",
         "forward_list": "cpp",
         "list": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "*.txt": "c",
+        "algorithm": "cpp",
+        "unordered_set": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
